@@ -39,7 +39,13 @@ const Navbar = () => {
       }  transition-colors duration-300`}
     >
       <nav className="h-full w-full flex justify-between items-center py-4 container-custom pointer-events-auto">
-        <Link href={"/"}>
+        <Link
+          href={"/"}
+          className="z-50"
+          onClick={() => {
+            if (isNavOpen) setIsNavOpen(false);
+          }}
+        >
           <h1
             className={`text-xl font-bold  ${
               isScrolled ? "text-gray-800" : "text-white"
@@ -98,6 +104,28 @@ const Navbar = () => {
           />
           <div className="clear" />
         </div>
+
+        <ul
+          className={`lg:hidden flex flex-col  items-center transition-all duration-[0.5s] py-[140px] px-5 bg-lightblue z-40 gap-5  h-full w-full fixed top-0 ${
+            isNavOpen ? "right-0" : "-right-full"
+          }`}
+        >
+          {navItems.map((item, idx) => (
+            <li key={idx}>
+              <Link
+                href={item.href}
+                onClick={() => setIsNavOpen(false)}
+                className={`${
+                  path === item.href ? "active" : ""
+                } transition-colors text-xl  ${
+                  isScrolled ? "text-gray-800" : "text-white"
+                }`}
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </header>
   );

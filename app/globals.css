@@ -180,7 +180,7 @@
     width: 60px;
     top: 0px;
     right: 0;
-    z-index: 10;
+    z-index: 1000;
     cursor: pointer;
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
@@ -217,5 +217,9 @@
       width: 50%;
       opacity: 1;
     }
+  }
+
+  .swiper-pagination {
+    top: 50px;
   }
 }

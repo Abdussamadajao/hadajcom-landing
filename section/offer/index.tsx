@@ -16,13 +16,13 @@ const Offer = () => {
             residential and commercial properties.
           </span>
         </div>
-        <div className="flex items-center gap-6 justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-2 ">
           {offers.map((offer, index) => (
             <div key={index} className="flex flex-col gap-4 items-center ">
               <div>
                 <offer.Icon size={150} color="#8B8B8B" />
               </div>
-              <div className="flex flex-col items-center justify-center gap-5 w-[363px]">
+              <div className="flex flex-col items-center justify-center gap-5 max-w-[363px]">
                 <h2 className="text-[32px] leading-5 text-black">
                   {offer.title}
                 </h2>
