@@ -6,6 +6,8 @@
 
 :root {
   --darkblue: oklch(25.57% 0.077 263.48);
+  --lightblue: oklch(89.06% 0.068 248.23);
+  --dark: oklch(21.63% 0.002 257.97);
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -45,7 +47,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-lightblue: var(--lightblue);
   --color-darkblue: var(--darkblue);
+  --color-dark: var(--dark);
   --color-grey: var(--color-grey);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
@@ -125,6 +129,7 @@
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
   --color-grey: var(--color-grey);
+  --color-lightblue: var(--lightblue);
 }
 
 @layer base {

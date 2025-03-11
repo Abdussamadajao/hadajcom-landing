@@ -29,6 +29,8 @@ const Hadajcom = () => {
             style={{ objectFit: "cover" }}
             alt="Man working on a roof"
             className="rounded-lg"
+            priority
+            sizes="(max-width: 403px) 100vw, 403px"
           />
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { Hadajcom, Hero } from "@/section";
+import { Hadajcom, Hero, Offer, Services } from "@/section";
 import Image from "next/image";
 
 export default function Home() {
@@ -6,6 +6,8 @@ export default function Home() {
     <>
       <Hero />
       <Hadajcom />
+      <Services />
+      <Offer />
     </>
   );
 }
