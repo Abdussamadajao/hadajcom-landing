@@ -1,16 +1,12 @@
+"use client";
 import { services } from "@/arr";
 import { Topic } from "@/types";
-import Image from "next/image";
+import { useParams } from "next/navigation";
 import React from "react";
 
-interface Props {
-  params: {
-    slug: string;
-  };
-}
-
-const Service = async ({ params }: Props) => {
-  const topicData: Topic | undefined = await services.find(
+const Service = () => {
+  const params = useParams();
+  const topicData: Topic | undefined = services.find(
     (slug) => slug.id === params.slug
   );
 
