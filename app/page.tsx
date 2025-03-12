@@ -1,5 +1,12 @@
-import { Hadajcom, Hero, Offer, Projects, Services } from "@/section/";
-import Testimonial from "@/section/testimonial";
+import {
+  Contact,
+  Hadajcom,
+  Hero,
+  Offer,
+  Projects,
+  Services,
+  Testimonial,
+} from "@/section";
 
 export default function Home() {
   return (
@@ -10,6 +17,7 @@ export default function Home() {
       <Offer />
       <Projects />
       <Testimonial />
+      <Contact />
     </>
   );
 }
