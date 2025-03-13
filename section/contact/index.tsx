@@ -25,6 +25,7 @@ const Contact = () => {
           ))}
         </div>
       </div>
+      <div className="flex-[0_0_100%] lg:flex-[0_0_50%] max-w-full lg:max-w-1/2 flex flex-col gap-4"></div>
     </section>
   );
 };
